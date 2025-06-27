@@ -94,3 +94,80 @@ mylist.remove(20)  # Removing the first occurrence of 20
 print(mylist)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Time complexity for removing an item is O(n) in the worst case
 # Space complexity for removing an item is O(1) since we are modifying the list in place.
+
+a = [1, 2, 3, 4, 5]
+b = [6, 7, 8, 9, 10]
+c = a + b  # Concatenating two lists
+print(c)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Time complexity for concatenation is O(n + m) where n and m are the lengths of the two lists
+# Space complexity for concatenation is O(n + m) since we are creating a new list with n + m elements 
+
+a = [0]
+a = a * 5  # Repeating the list 5 times
+print(a)  # Output: [0, 0, 0, 0, 0]
+# Time complexity for repeating a list is O(n * k) where n is the length of the list and k is the number of repetitions
+# Space complexity for repeating a list is O(n * k) since we are creating a new list with n * k elements
+
+b = [0, 1}
+b = b * 5  # Repeating the list 5 times
+print(b)  # Output: [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+# Time complexity for repeating a list is O(n * k) where n is the length of the list and k is the number of repetitions
+# Space complexity for repeating a list is O(n * k) since we are creating a new list with n * k elements
+
+# Builtin Functions:
+
+a = [1, 2, 3, 4, 5]
+print(len(a))  # Output: 5, returns the number of elements in the list
+print(max(a))  # Output: 5, returns the maximum element in the list
+print(min(a))  # Output: 1, returns the minimum element in the list
+print(sum(a))  # Output: 15, returns the sum of all elements in the list
+print(sorted(a))  # Output: [1, 2, 3, 4, 5], returns a new sorted list
+print(a)  # Output: [1, 2, 3, 4, 5], original list remains unchanged
+print(a.index(3))  # Output: 2, returns the index of the first occurrence of 3
+print(a.count(2))  # Output: 1, returns the count of occurrences of 2 in the list
+print(a.copy())  # Output: [1, 2, 3, 4, 5], returns a shallow copy of the list
+print(a.clear())  # Output: None, clears the list in place
+print(a)  # Output: [], original list is now empty  
+
+a = 'spam'
+b = list(a)  # Converting a string to a list of characters
+print(b)  # Output: ['s', 'p', 'a', 'm']
+c = ''.join(b)  # Joining the list of characters back into a string
+print(c)  # Output: spam
+# Time complexity for converting a string to a list is O(n) where n is the length of the string
+# Space complexity for converting a string to a list is O(n) since we are creating a new list with n elements
+# Time complexity for joining a list of characters into a string is O(n) where n is the number of characters in the list
+# Space complexity for joining a list of characters into a string is O(n) since we are creating a new string with n characters  
+
+# Sliptting a string into a list of words
+sentence = "Hello, how are you?"
+words = sentence.split()  # Splitting the string into a list of words
+print(words)  # Output: ['Hello,', 'how', 'are', 'you?']
+# Time complexity for splitting a string is O(n) where n is the length of the string
+# Space complexity for splitting a string is O(k) where k is the number of words
+# in the string, since we are creating a new list with k elements.
+
+# Delimited splitting
+csv_data = "name,age,city"
+fields = csv_data.split(',')  # Splitting the string by comma
+print(fields)  # Output: ['name', 'age', 'city']
+# Time complexity for delimited splitting is O(n) where n is the length of the string
+# Space complexity for delimited splitting is O(k) where k is the number of fields,
+# since we are creating a new list with k elements. 
+
+# Joining a list of strings into a single string
+words = ['Hello,', 'how', 'are', 'you?']
+sentence = ' '.join(words)  # Joining the list of words into a single string
+print(sentence)  # Output: Hello, how are you?
+# Time complexity for joining a list of strings is O(n) where n is the total length
+# of all strings in the list
+# Space complexity for joining a list of strings is O(n) since we are creating a new
+# string with the total length of all strings in the list.
+
+# Joining a list of strings with a specific delimiter
+csv_data = ['name', 'age', 'city']
+csv_string = ','.join(csv_data)  # Joining the list with a comma
+print(csv_string)  # Output: name,age,city
+# Time complexity for joining a list of strings with a specific delimiter is O(n) where n is the total length of all strings in the list
+# Space complexity for joining a list of strings with a specific delimiter is O(n) since we are creating a new string with the total length of all strings in the list.
+
